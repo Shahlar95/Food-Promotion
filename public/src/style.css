@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.container .container-head{
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+.container .container-head p{
+    font-size: 19px;
+    color: #979797;
+    font-weight: 300;
+}
+
+.container .container-head h2{
+    font-size: 36px;
+    color: #101010;
+    margin: 10px 0;
+}
+
+.container .container-products .sales-list{
+    text-align: center;
+    margin: 50px 0;
+    
+}
+
+
+.container .container-products .sales-list span{
+    padding: 0 15px;
+    font-size: 14px;
+}
+.container .container-products .sales-list .on-sale a{
+    color: #101010;
+   font-weight: bold;
+   border-bottom: 2px solid black;
+   padding: 3px 0;
+
+}
+
+.container .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+   
+}
+
+.container .cards .card{
+    width: 15%;
+    
+    
+}
+
+.container .cards .card .card-image{
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+.container .cards .card .card-image img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+
+.container .cards .card .card-image .image2{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+
+}
+    
+.container .cards .card:hover .card-image .image1{
+    transform: scale(1.1);
+}
+
+.container .cards .card:hover .card-image .image2{
+    z-index: 1;
+}
+
+.container .cards .card .card-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+
+}
+
+.container .cards .card .card-content p a{
+    color: #979797; 
+    font-size: 12px;
+}
+
+.container .cards .card .card-content h3{
+    margin: 5px 0;
+}
+.container .cards .card .card-content h3 a{
+
+    font-size: 14px;
+    color: #313131;
+}
+
+.container .cards .card .card-content p{
+    font-size: 16px;
+    color: #313131;
+}
+
+.container .cards .card .card-content p span{
+    color: #979797;
+    font-size: 14px;
+    text-decoration: line-through;
+    padding: 0 5px;
+
+}
+
+.container .cards .card .card-icon{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.container .cards .card .card-icon:hover{
+    background-color: black
+}
+
+.container .cards .card .card-icon i{
+    padding: 6px;
+    color: #31313159;
+    
+    
+}
+
+.container .cards .card .card-icon:hover i{
+    color: white;
+}
+
+.container .cards .card .diccount-percent{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fdd784;
+    padding: 3px 6px;
+    font-size: 14px;
+    z-index: 1;
+
+}
+
+.container .cards .card .diccount-percent .svg{
+    position: absolute;
+    fill: #fdd784;
+    display: flex;
+    width: 50px;
+    height: 26px;
+    left: 47px;
+    top: 0;
+}
+
+@media (min-width: 0px) {
+    .container .cards .card{
+        width: calc(100% - 40px);  
+    }
+
+}
+
+@media (min-width: 400px) {
+    .container .cards .card{
+        width: calc(50% - 40px);  
+    }
+
+}
+
+@media (min-width: 768px) {
+    .container .cards .card{
+        width: calc(33.3333% - 40px);     
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container .cards .card{
+        width: calc(16.666661% - 40px);   
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .container .cards .card{
+        width: calc(16.666661% - 40px);  
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .container .cards .card{
+          width: 16.666661%;  
+    }
+
+}
